@@ -14,12 +14,10 @@ apt update
 
 yes | apt install libssl-dev dpatch debhelper libwrap0-dev autotools-dev gawk
 
-if [[ ! -e $(pwd)/051-monitoring-plugins ]]; then
-  # Not running from nems-admin. Install plugins
-  apt -y install --reinstall monitoring-plugins-common
-  apt -y install --reinstall monitoring-plugins-basic
-  apt -y install --reinstall monitoring-plugins-standard
-fi
+apt -y install --reinstall monitoring-plugins-common
+apt -y install --reinstall monitoring-plugins-basic
+apt -y install --reinstall monitoring-plugins-standard
+
 tmpdir=`mktemp -d -p /tmp/`
 file="https://github.com/NagiosEnterprises/nrpe/archive/nrpe-$nrpeVer.tar.gz"
 cd $tmpdir

@@ -4,11 +4,9 @@
 * k8s/k3s monitoring
 * try to get pi-hole on nems
 * armbian monitor stats
-* rpi temp stats
-
 
 ## pushover 
- * see pushover.creds
+* see pushover.creds
 
 ## pi-hole tricks to resolve for a local domain:
 * /etc/dnsmasq.d 
