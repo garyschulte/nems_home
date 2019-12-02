@@ -3,7 +3,6 @@
 ## todo:
 * k8s/k3s monitoring
 * try to get pi-hole on nems
-* armbian monitor stats
 
 ## pushover 
 * see pushover.creds
