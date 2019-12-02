@@ -43,3 +43,6 @@ allowed_hosts=127.0.0.1,192.168.0.240
 * add check_sbc_temp to `/usr/local/nagios/etc/nrpe.cfg`
   * ```command[check_sbc_temp]=/usr/lib/nagios/plugins/custom_check_sbc_temp $ARG1$```
 * `sudo systemctl restart nrpe`
+
+## setup armbian cpu temp monitoring
+* same as above, except using armbian-temp.py
